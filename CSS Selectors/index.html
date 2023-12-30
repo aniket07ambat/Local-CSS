@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* Element selector */
+        div {
+            background-color: aqua;
+        }
+        /* Class selectors */
+        .red {
+            background-color: red;
+        }
+        /* Id selectors */
+        #bluevoilet {
+            background-color: blueviolet;
+        } 
+        /* Child selectors */
+        div > p {
+            background-color: brown;
+        }
+        /* Decendent selectors */
+        div p {
+            background-color: brown;
+        }
+        /* Universel selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #white {
+            background-color: rgb(207, 204, 204);
+        }
+        /* Pseudo selectors */
+        a:visited {
+            color: chartreuse;
+        }
+        a:link {
+            color: darkmagenta;
+        }
+        a:hover {
+            background-color: aqua;
+        }
+        /* p:first-child {
+            background-color: coral;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        using selectors.
+    </div>
+    <div class="red">
+        learning selectors.
+    </div>
+    <div id="bluevoilet">
+        I am good.
+    </div>
+    <div>
+        <p>Using child selectors.</p>
+    </div>
+    <div>
+        here p is in article tag so use 
+        <article>
+            <p>decendent selectors to change background-color</p>
+        </article>
+    </div>
+    <h2>From here pseudo selectors</h2>
+    <div id="white">
+        <a href="https://www.google.com">Go to google</a>
+    </div>
+    <div id="white">
+        <a href="https://www.codewithharry.com">Go to codewithharry</a>
+    </div>
+</body>
+</html>

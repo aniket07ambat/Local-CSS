@@ -1,0 +1,19 @@
+body {
+    background-color: #1e1e1e;
+    /*  
+    background-image: url(image1.jfif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: scroll; */
+}
+/* CSS Background Attachment
+https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_attachment
+body {
+  background-color: #1e1e1e;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-right: 200px;
+  background-attachment: fixed;
+}
+*/

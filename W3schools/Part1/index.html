@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS learning </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Note: The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first. -->
+    <style>
+        #imp {
+            color: chartreuse;
+            background-color: rgb(112, 6, 112);
+        }
+
+        /*  Grouping selector */
+        p,
+        h1,
+        h2 {
+            text-align: center;
+            color: red;
+        }
+
+        h1 {
+            border: 2px solid blue;
+            border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */;
+        }
+
+        h2 {
+            border-style: dashed;
+
+        }
+
+        p {
+            border-style: double;
+            border-width: 10px;
+            border-color: aqua;
+            margin: auto
+        }
+        .noborder {
+            color: mediumslateblue;
+            border-style: none;
+
+        }
+        p.three {
+            color: chocolate;
+            border-style: solid;
+            border-color: darkgreen;
+            border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left */
+        }
+        p.radius {
+            border: 2px solid burlywood;
+            border-radius: 8px;
+            padding: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="imp">An id name and class name cannot start with a number!</p>
+    <h1>Hello World!</h1>
+    <h2>Smaller heading!</h2>
+    <p>This is a paragraph.</p>
+    <div>
+        <h2>The border-width Property</h2>
+        <p class="noborder">The border-width property can have from one to four values (for the top border, right border, bottom border,
+            and the left border):</p>
+    </div>
+    <p class="three">Some text.</p>
+    <p class="radius">border-radius Property is used to add rounded borders to an element:</p>
+    <div>
+        <span>https://www.w3schools.com/css/tryit.asp?filename=trycss_margin-left_inherit</span>
+    </div>
+</body>
+
+</html>

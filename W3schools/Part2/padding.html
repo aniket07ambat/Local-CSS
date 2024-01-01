@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS learning</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+        }
+        h1 {
+            background-color: aqua;
+            color: blue;
+            border: 2px solid red;
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+        .ex2 {
+            color: brown;
+            background-color: rgb(208, 170, 243);
+            border-style: dotted;
+            border-color: rgb(219, 124, 0);
+            width: 300px;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+        p {
+            border: 2px solid rgb(255, 0, 0);
+            width: 300px;
+        }
+        .max-width > p  {
+            border: 3px solid green;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Learning padding</h1>
+    </div>
+    <div>
+        <p>Why box medel is used?</p>
+        <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_padding_width -->
+    </div>
+    <div class="ex2">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.
+    </div>
+    <div class="max-width">
+        <p>Resize the browser window to see the effect.</p>
+    </div>
+</body>
+</html>

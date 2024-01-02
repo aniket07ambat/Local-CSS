@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-size: 15px;
+        }
+        body {
+            background-color: #1e1e1e;
+            color: violet;
+            font-size: 20px;
+        }
+        .em {
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 150%;
+        }
+        h1 {
+            font-size: 10vw;
+        }
+        .rem {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="em">1em is equal to the current font size. The default text size in browsers is 16px. Here body size is 20px.(1.5em = 30px)</p>
+        <p>a default font-size in percent for the &lt;body&gt; element(150%)</p>
+        <h1>Responsive text</h1>
+        <!-- see magic by adjusting window size -->
+        <!-- https://www.w3schools.com/css/tryit.asp?filename=trycss_font_responsive -->
+    </div>
+    <p class="rem">&lt;html&gt; is root element. font size is 15px. Here using 1rem so only 15px.</p>
+</body>
+</html>

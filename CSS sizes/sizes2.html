@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: violet;
+            margin: 0;
+            padding: 0;
+            /* font-size: 20px; */
+        }
+        .box {
+            box-sizing: border-box;
+            border: 2px solid aqua;
+            width: 80vw;
+            /* auto only when it is block enlement. It centers. */
+            margin: auto;
+        }
+        .box1 {
+            box-sizing: border-box;
+            border: 2px solid green;
+            width: 50vw;
+            margin: 20px auto;
+        }
+        .vh {
+            border: 2px solid burlywood;
+            width: 60vw;
+            margin: 30px auto;
+            height: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is box.
+    </div>
+    <span class="box">
+        this is in &lt; span &gt; inline element(margin:auto not working)
+    </span>
+    <div class="box1">
+        Next box comming!
+    </div>
+    <div class="vh">
+        Use of vh: viewport height
+    </div>
+    <pre>There are many units. 
+        some complex like vmin and vmax. 
+vmin: IN pc minimum is height so vmin is vh in pc.
+In mobile min is minimum is width so vmin is vw in mobile.
+Check out this later.  </pre>
+</body>
+</html>

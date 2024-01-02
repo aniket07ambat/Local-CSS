@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: violet; 
+            font-size: 20px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid red;
+            display: inline;
+            padding: 10px;
+        }
+        .box1 {
+            border: 2px solid red;
+            padding: 10px;
+            display: inline;
+            margin: 20px;
+        }
+        .block {
+            border: 2px solid green;
+            display: inline-block;
+            margin: 20px;
+            /* you can only use width if you use inline-block property */
+            width: 250px; 
+            padding: 10px;
+        }
+        .block1 {
+            border: 2px solid green;
+            display: inline-block;
+            margin: 20px;
+            padding: 10px;
+        }
+        .new {
+            /* I am div I am block. is eliminated with its space*/
+            /* display: none; */
+            
+            /* visibility: hidden; */
+            /* no space is eliminated. */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am box.
+    </div>
+    <div class="box1">
+        I am div I am block.
+    </div>
+    <span class="box1">
+        I am  span.
+    </span>
+    <p>There is no border at top. to solve problems use inline-block </p>
+    <hr>
+    <hr>
+    <div class="block">
+        I am box.
+    </div>
+    <div class="block1 new">
+        I am div I am block.
+    </div>
+    <span>
+        I am  span.
+    </span>
+</body>
+</html>

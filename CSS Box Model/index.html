@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Box model</title>
     <style>
+        body {
+            background-color: #1e1e1e;
+            color: violet; 
+        }
         * {
             margin: 0;
             padding: 0;
@@ -28,6 +32,9 @@
             height: 200px;
             box-sizing: border-box;
         }
+        p {
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +43,10 @@
     <hr>
     <div>
         <p>here margin is collaped between box1 and box2. CSS takes which were margin is biggest</p>
+    </div>
+    <hr>
+    <div class="box box1">
+        Third box
     </div>
 </body>
 </html>

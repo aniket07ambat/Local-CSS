@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: violet;
+            font-size: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid green;
+            height: 133px;
+            width: 80vw;
+            margin: 3px;
+            padding: 2px;
+        }
+
+        .box1 {
+            background-color: rgb(131, 131, 192);
+        }
+
+        .box2 {
+            background-color: rgb(131, 192, 133);
+            position: absolute;
+            top: 34px;
+            left: 56px;
+        }
+
+        .box3 {
+            background-color: rgb(131, 186, 192);
+        }
+
+        .box4 {
+            background-color: rgb(97, 98, 68);
+        }
+        .parent {
+            border: 2px solid red;
+            margin: 20px;
+            padding: 20px
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+    <div class="box box1">First box</div>
+    <div class="box box2">second box: is absolute (relative of parent)</div>
+    <div class="box box3">third box</div>
+    </div>
+    <pre>
+        An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+        positioned relative to the viewport, like fixed).
+
+        However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves
+        along with page scrolling.
+
+        Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+    </pre>
+    <div>
+        <h1>Important There are some expections.</h1>
+        <p>If parent is not given means there is no position set for any element so ancestor become html tag itself. it adjusts relative to html page.</p>
+        
+        <pre> Exception: transform, filter, or perspective properties can also make an element appear as positioned */
+        /* transform: translate(0); */
+        /* filter: invert(0); */
+        /* perspective: 0em; */
+    </pre>
+    </div>
+</body>
+
+</html>

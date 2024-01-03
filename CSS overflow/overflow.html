@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow proprety</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: violet; 
+            font-size: 20px;
+        }
+        div {
+            width: 30vw;
+            height: 15vw;
+            border: 2px solid blue;
+            margin: 30px;
+        }
+        .box1 {
+            overflow: scroll;
+        }
+        .box2 {
+            /* auto is used only if overflow is present
+            scroll is always present in the screen even if there is no overflow. */
+            overflow: auto;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .box3 {
+            /* overflow auto is recommended. */
+            overflow: auto; 
+            /* overflow-x: hidden; */
+            /* overflow-y: hidden; */
+            /* overflow: hidden auto; */
+            overflow: auto hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">I am boy. I Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit, debitis amet cumque eligendi molestias maiores necessitatibus quasi temporibus in! Ad, nisi incidunt! Maiores fuga et at velit, repellat quasi voluptate nam amet corrupti harum iure asperiores labore vitae suscipit! Tempore, totam atque. Natus, quos.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum blanditiis alias voluptas ipsa pariatur reiciendis, labore, cupiditate perferendis illo amet exercitationem impedit, eaque repellendus distinctio voluptate eos voluptatem iure quia tempore dolore obcaecati numquam! Illum numquam nisi voluptate aperiam magnam cumque, aliquam mollitia culpa explicabo?
+    </div>
+
+    <div class="box2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, cumque a mollitia nihil enim eos ea, similique quos quasi unde maxime possimus blanditiis debitis facilis explicabo magni repellat, vero tempora aspernatur voluptatibus iusto nostrum adipisci? Quae laudantium sed ducimus eius? Consectetur blanditiis quibusdam accusamus aliquam, alias a nihil similique ipsum molestias quas sint quisquam repudiandae totam voluptatem necessitatibus quidem iusto consequuntur quo et error voluptatum? Nisi dolor reprehenderit consequatur ipsum!</div>
+
+    <div class="box3">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis recusandae quidem quo inventore, asperiores, nobis assumenda explicabo tempora provident minus quaerat, placeat ipsa? Voluptatum dolorum quidem deserunt rerum, earum ut corrupti quod magnam hic soluta ipsum veritatis sed ex voluptatem sunt eum fuga mollitia quisquam maiores at velit excepturi nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ullam impedit quidem deserunt tempora unde perspiciatis. Provident omnis nesciunt asperiores aperiam. Doloribus minima assumenda id laboriosam optio consectetur repellat deserunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, omnis quia! Eaque corporis illum odit aperiam perspiciatis iusto temporibus non, voluptate impedit ipsum architecto vero itaque quae doloribus eius facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit at reprehenderit natus perferendis voluptatem, ipsa deserunt odit distinctio ab explicabo. Alias, dolores error. Facere obcaecati, deserunt placeat a similique alias ea. Odio, facilis temporibus asperiores est excepturi impedit minus!
+    </div>
+</body>
+</html>

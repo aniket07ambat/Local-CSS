@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* using global variables */
+        :root{
+            --color: rgb(58, 58, 189);
+            --seccolor: rgb(55, 55, 75);
+            --defpad: 20px;
+            --defop: 0.3;
+        }
+        body {
+            background-color: #1e1e1e;
+            color: violet;
+            font-size: 20px;
+        }
+        .nav {
+            /* background-color: rgb(69, 137, 0); */
+            background-color: var(--color);
+        }
+        ul {
+            display: flex;
+        }
+        ul li{
+            list-style-type: none;
+            /* padding: 25px; */
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+            /* opacity: 0.7; */
+            opacity: var(--defop);
+        }
+        ul li:first-child{
+            /* Now using local variable who is overrideing global variable */
+            --color: orange;
+            background-color: var(--color);
+            /* if --color us not present then use
+            background-color: var(--color, red)*/
+        }
+        .container {
+            /* background-color: rgb(27, 53, 2); */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Email</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque molestiae quidem saepe, totam hic porro deleniti enim aspernatur vero dolores neque vel recusandae sint nobis vitae facere alias eaque maiores!
+    </div>
+</body>
+</html>

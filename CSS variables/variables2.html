@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        :root {
+            --blue: #1e90ff;
+            --white: white;
+
+        }
+
+        body {
+            /* background-color: #1e90ff; */
+            background-color: var(--blue);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--white);
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            border: 2px solid var(--white);
+            padding: 4px;
+        }
+
+        button {
+            /* background-color: white; */
+            background-color: var(--white);
+            /* border: 1px solid #1e90ff; */
+            border: 1px solid var(--blue);
+            /* color: #1e90ff; */
+            /* overriding global variable */
+            --green: green; /* Local variable  */
+            color: var(--green);
+        }
+
+        .submit {
+            border: 2px solid;
+            width: 48px;
+            padding: 3px;
+        }
+
+        @media screen and (max-width: 480px) {
+
+            
+            :root {
+                --violet: violet;
+            }
+            .submit{
+                background-color: var(--violet);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Using the var() Function</h1>
+
+    <div class="container">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+            felis blandit.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar
+            felis blandit.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+        <p class="submit">Submit</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: violet;
+            font-size: 20px;
+        }
+
+        .wrapper {
+            overflow: auto;
+        }
+
+        #main {
+            margin-left: 4px;
+        }
+
+        #leftsidebar {
+            float: none;
+            width: auto;
+        }
+        #menulist {
+            margin: 0;
+            padding: 0;
+        }
+        .menuitem {
+            border: 2px solid rgb(0, 255, 238);
+            background-color: rgb(105, 44, 0);
+            border-radius: 4px;
+            list-style-type: none;
+            margin: 4px;
+            padding: 3px;
+        }
+        @media screen and (min-width: 480px) {
+            body {
+                background-color: gray;
+            }
+            #leftsidebar{
+                width: 200px;
+                float: left;
+            }
+            #main {
+                margin-left: 224px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Resize the browser window to see the effect!</h1> -->
+    <!-- <p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p> -->
+
+    <div class="wrapper">
+        <div id="leftsidebar">
+            <ul id="menulist">
+                <li class="menuitem">Menu-item 1</li>
+                <li class="menuitem">Menu-item 2</li>
+                <li class="menuitem">Menu-item 3</li>
+                <li class="menuitem">Menu-item 4</li>
+                <li class="menuitem">Menu-item 5</li>
+            </ul>
+        </div>
+
+        <div id="main">
+            <h1>Resize the browser window to see the effect!</h1>
+            <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or
+                wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+        </div>
+    </div>
+</body>
+
+</html>

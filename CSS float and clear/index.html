@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: rgb(130, 77, 163); 
+            font-size: 20px;
+        }
+        img {
+            float: left;
+        }
+        .card {
+            border: 1px solid red;
+            display: flow-root;
+        }
+        .cards {
+            border: 1px solid aqua;
+        }
+        /* nth child means apne parent ka n child.  */
+        .cards:nth-child(3) {  
+            background-color: coral;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Avoid using Float and clear use flex instead.</h1>
+    <div class="card">
+    <img src="https://th.bing.com/th/id/OIP.TQSxaEcMizUChr5Gz1dbYgHaFj?rs=1&pid=ImgDetMain" width="200px" alt="Nature image">
+    <div class="cards">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo laboriosam iste atque error. Alias officiis adipisci eius blanditiis! Quam tempora odit repellendus reiciendis.</div>
+    <div class="cards">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore totam beatae recusandae quisquam molestias dignissimos magni saepe! Quod deserunt atque voluptas maxime aperiam eaque sint error facilis perspiciatis aliquid vitae temporibus est voluptatem magnam asperiores tempore porro labore tempora sit, molestiae inventore optio? Nihil a voluptatibus laborum repudiandae, hic voluptate vitae! Non blanditiis corrupti quibusdam tenetur, iste illum, numquam suscipit eaque velit excepturi molestiae accusantium. Eos, eveniet! Atque, maxime laborum accusantium optio excepturi quis iusto quam sapiente aperiam nostrum consequuntur quia vitae deleniti. Odit harum, quibusdam iure vero consequuntur sit quam ipsum quis quas odio dolores. Ut optio nulla ipsa molestias perferendis amet obcaecati ex nemo saepe reprehenderit. Perspiciatis consectetur asperiores dolorum sequi provident, dolorem, iusto at odit consequuntur fugit odio quaerat non distinctio delectus neque placeat atque id repellendus eaque est laboriosam, veritatis amet! Optio pariatur delectus explicabo esse libero, earum cumque natus rerum deleniti dolores aliquam? Velit nihil animi ratione, quidem, natus laborum praesentium pariatur repudiandae tenetur voluptas voluptates sit, sed autem. Autem maiores nesciunt, esse nulla iure ex beatae reprehenderit magnam quidem quam modi excepturi delectus, explicabo molestias. Perspiciatis pariatur quibusdam, provident blanditiis dolores possimus commodi illum delectus quaerat soluta aut tenetur consectetur dolorum voluptas iste voluptate a quas placeat corporis? Ea, ad itaque quas, voluptates eveniet vel iusto quia est ipsa corporis similique repudiandae laboriosam labore vero aliquam cum suscipit delectus, incidunt facere molestiae natus neque accusamus! Quas, asperiores temporibus consequuntur unde molestiae maxime saepe perspiciatis. Quasi accusantium laboriosam voluptatibus, ipsa consequatur minus magni. Quae laborum, quibusdam quos doloremque error consequatur! Eius minus sapiente esse excepturi voluptate, labore aliquid commodi molestias quis praesentium officia natus tenetur inventore! Accusamus nihil fuga amet optio maiores. Tempora, fugit cum officiis ex architecto nihil incidunt omnis quas illum dolorum itaque tempore saepe ab placeat animi eveniet, temporibus enim ratione minus dolores quaerat? Illum cupiditate veniam excepturi unde necessitatibus. Laborum voluptas, accusantium non debitis dolore enim incidunt nihil quas distinctio commodi molestias sequi adipisci corrupti, neque corporis maxime placeat, consequuntur aspernatur consectetur nisi magnam unde ipsa eum! Aliquam fugiat dolorum praesentium earum esse pariatur voluptatem reprehenderit. Dicta facilis illum ad magni ipsum vitae nihil aspernatur aliquid porro reiciendis beatae veniam dolor est hic mollitia quam voluptate, voluptatem animi! Officiis ea eligendi ratione excepturi magnam hic totam quibusdam eos. Temporibus vitae debitis optio esse veniam quae! Velit suscipit placeat ducimus reprehenderit asperiores repellendus accusamus error aliquam unde mollitia. Est eligendi laboriosam quibusdam?</div>
+    <div class="cards">Card 3</div>
+    </div>
+</body>
+</html>

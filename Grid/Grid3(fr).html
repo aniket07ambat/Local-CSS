@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid fr unit</title>
+    <style>
+        body {
+            background-color: rgb(46, 46, 46);
+            color: violet;
+        }
+        .container {
+            width: 80vw;
+            height: 50vh;
+            border: 2px solid rgb(255, 4, 4);
+            display: grid;
+            /* To understand grid-template-columns comment width of item. */
+            grid-template-columns: 1fr 2fr 1fr;
+
+            /* we can also use repeat  */
+            /* ex grid-template-colums: 1fr 1fr 1fr 1fr */
+            /* grid-template-columns: repeat(4, 1fr); */
+
+            /* Gap property: Don't use padding in flexbox and grid */
+            /* gap: 30px 50px;  shortend property*/  
+            row-gap: 30px;
+            column-gap: 50px;
+        }
+
+        .item {
+            border: 2px solid aqua;
+            width: 55px;
+            height: 40px;
+        }
+        .item2 {
+            align-self: self-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+    </div>
+</body>
+</html>

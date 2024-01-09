@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Check background property
+https://www.w3schools.com/css/tryit.asp?filename=trycss_background-image_attachment
+ -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +10,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- Note: The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first. -->
     <style>
+        body {
+            font-size: 22px;
+        }
         #imp {
             color: chartreuse;
             background-color: rgb(112, 6, 112);
@@ -55,6 +60,23 @@
             margin: 10px;
         }
     </style>
+    <style>
+        .makes {
+            padding: 5px;
+        }
+        .Practice {
+            font-size: 25px;
+            border-width: 30px;
+            border: 4px double burlywood;
+            color: crimson;
+            border-radius: 6px;
+            margin: 30px;
+        }
+        .style{
+            border-style: none;
+            font-size: 25px;
+        }
+    </style>
 </head>
 
 <body>
@@ -72,6 +94,12 @@
     <div>
         <span>https://www.w3schools.com/css/tryit.asp?filename=trycss_margin-left_inherit</span>
     </div>
+
+    <div class="makes">
+        <p class="Practice">Practice makes better.</p>
+        <p class="style">Border-styles are: none, dashed, dotted, solid, ... </p>
+    </div>
+
 </body>
 
 </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms</title>
+    <style>
+        body {
+            background-color: rgb(46, 46, 46);
+            font-size: 22px;
+            color: violet;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            border: 2px solid red;
+            height: 80vh;
+            width: 100vh;
+
+        }
+
+        .box{
+            border: 2px solid blue;
+            background-color: aqua;
+            color: rgb(4, 0, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 50px;
+
+            /* Tranform property */
+            /* transform: rotate(45deg); */
+
+            /* 360 deg = 1turn */
+            /* transform: rotate(.25turn);  */
+
+            /* rotate by axis */
+            /* transform: rotateX(70deg); */
+            /* transform: rotateY(70deg); */
+            /* transform: rotateZ(70deg); */
+
+            /* transform scale */
+            /* transform:scale(1.5); */
+
+            /* transform: scale3d(1.5, 1.5, 1); */
+/* The values in the scale3d function represent scaling factors for the X, Y, and Z axes respectively */
+/* Here, the element is scaled by a factor of 1.5 in both the X and Y axes, while leaving the Z axis unchanged */
+            
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scaleZ(2); */
+
+            /* transform skew */
+            /* transform: skew(20deg); */
+            /* transform: skewX(49deg); */
+            /* transform: skewY(49deg); */
+            /* YOu Can't use skewZ */
+
+            /* Use most in transform Translate property */
+            /* transform: translate(30%); */
+            /* transform: translate(30px); */
+
+            /* transform: translate3d(); */
+            /* transform: translateX(100%); */
+            /* transform: translateY(100%); */
+            /* transform: translateZ(100%); */
+
+            /* Use case to hide nav bar */
+            /* shortend property  */
+            transform:  translateY(-100%) skew(40deg) translateX(45%);
+
+            /* There is also transform: origin [Advanced concept means used less] */
+
+
+
+
+
+
+        }
+        </style>
+        
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

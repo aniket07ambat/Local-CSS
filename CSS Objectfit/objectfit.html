@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-position </title>
+    <style>
+        body{
+            background-color: rgb(41, 38, 38);
+            font-size: 22px;
+            color: violet;
+        }
+
+        .container {
+            border: 2px solid red;
+            width: 400px;
+            height: 400px;
+        }
+
+        .first {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            object-position: left bottom;
+        }
+        .margin {
+            margin-top: 100px;
+        }
+        .second {
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+            /* Try play with value in developer tools. */
+            object-position: 10px 20px;
+        }
+        .backgroundimg {
+            height: 488px;
+            width: 466px;
+            border: 2px solid rgb(90, 247, 0);
+            background-image: url("https://images.gogroopie.com/i/v5_1ber55m2eos_b.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://th.bing.com/th/id/R.1ee629961e7dfb6c5c4ec614068ec9e9?rik=%2f9Tm%2fKgkIr7QKQ&riu=http%3a%2f%2fwww.sanmartinescrow.com%2fwp-content%2fuploads%2f2016%2f10%2fwebsite-design-background.png&ehk=%2f8y6iFR8eBQnj7SKrIcOX4WoqP3m54JDG7bW1i8jnSY%3d&risl=&pid=ImgRaw&r=0" width="600px"  alt="img">
+
+    <div class="margin"></div>
+
+    <div class="container">
+        <img class="first" src="https://th.bing.com/th/id/R.1ee629961e7dfb6c5c4ec614068ec9e9?rik=%2f9Tm%2fKgkIr7QKQ&riu=http%3a%2f%2fwww.sanmartinescrow.com%2fwp-content%2fuploads%2f2016%2f10%2fwebsite-design-background.png&ehk=%2f8y6iFR8eBQnj7SKrIcOX4WoqP3m54JDG7bW1i8jnSY%3d&risl=&pid=ImgRaw&r=0" alt="image">
+    </div>
+    <div class="margin"></div>
+    <div class="container">
+        <img class="second" src="https://th.bing.com/th/id/OIP.J5WUPGRnSPNyDt0vENnjrwHaDn?w=311&h=180&c=7&r=0&o=5&pid=1.7" alt="img">
+    </div>
+    <div class="margin"></div>
+    <p>Default object-fit property is "object-fit: fill"</p>
+
+    <div class="margin"></div>
+
+    <div class="backgroundimg">
+        
+    </div>
+</body>
+</html>
